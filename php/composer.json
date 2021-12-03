@@ -1,0 +1,13 @@
+{
+    "name": "ilham76c/php",
+    "description": "Belajar Session Management PHP dengan JWT",
+    "authors": [
+        {
+            "name": "Moh. Ilham Burhanuddin",
+            "email": "m.ilham.b.97@gmail.com"
+        }
+    ],
+    "require": {
+        "firebase/php-jwt": "^5.5"
+    }
+}
