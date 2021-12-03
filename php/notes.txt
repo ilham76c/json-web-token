@@ -1,0 +1,4 @@
+Keamanan Tambahan Untuk JWT
+
+1. Menggunakan HTTP Only ketika setCookie() agar cookie tidak bisa di akses melalui Javascript (XXS)
+2. Menambahkan info random id pada body JWT agar JWT tidak selalu sama
