@@ -1,9 +1,13 @@
 <?php
 
 class Session {
+    public $username;
+    public $role;
+    
     public function __construct(string $username, string $role)
     {
-        
+        $this->username = $username;
+        $this->role = $role;
     }
 }
 

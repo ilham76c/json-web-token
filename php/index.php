@@ -15,6 +15,6 @@ try {
 
     </head>
     <body>
-        <h1>Hello <?= $session->username ?></h1>
+        <h1>Hello <?= $session->username; ?></h1>
     </body>
 </html>
