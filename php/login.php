@@ -15,6 +15,23 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 <html>
     <head>
         <title>Login</title>
+        <style>
+            .inline-flex {
+                display: inline-flex;
+            }
+            .flex-column {
+                flex-direction: column;
+            }
+            .fit-content {
+                width: fit-content;
+            }
+            .align-items-center {
+                align-items: center;
+            }
+            .gap-10 {
+                gap: 10px;
+            }
+        </style>
     </head>
     <body>
         <?php if ($message) : ?>
@@ -23,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
 
         <h1>Login</h1>
-        <form action="/login.php" method="post">
+        <form class="inline-flex gap-10 flex-column align-items-center" action="/login.php" method="post">
             <label for="username">
                 Username :
                 <input type="text" name="username">
@@ -32,7 +49,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 Password :
                 <input type="text" name="password">
             </label>
-            <input type="submit" value="Login">
+            <input class="fit-content" type="submit" value="Login">
         </form>
     </body>
 </html>
