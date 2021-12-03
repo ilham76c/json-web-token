@@ -1,0 +1,11 @@
+{
+    "name": "ilham76c/json-web-token",
+    "description": "Belajar Session Management PHP dengan JWT",
+    "authors": [
+        {
+            "name": "Moh. Ilham Burhanuddin",
+            "email": "m.ilham.b.97@gmail.com"
+        }
+    ],
+    "require": {}
+}
