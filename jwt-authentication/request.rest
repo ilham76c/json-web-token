@@ -1,0 +1,31 @@
+### Get Posts Data using Access Token
+GET http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvcyIsImlhdCI6MTcxMzI5MDgwNiwiZXhwIjoxNzEzMjkwODIxfQ.X5nZoOsqHC7eei0oSdByxrwY1OaQpYzmgMk9NwGOWjE
+
+
+### Login
+POST http://localhost:4000/login
+Content-Type: application/json
+
+{
+  "username": "jos"
+}
+
+
+### Refresh Token (token: refresh token)
+POST http://localhost:4000/token
+Content-Type: application/json
+
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvcyIsImlhdCI6MTcxMzI5MDY5NH0.FGeZFIejVYZNZ5Gxoq774ydpLO25IeXNr_h3Op0wUck" 
+}
+
+
+
+### Logout (token: refresh token)
+DELETE http://localhost:4000/logout
+Content-Type: application/json
+
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvcyIsImlhdCI6MTcxMzI5MDY5NH0.FGeZFIejVYZNZ5Gxoq774ydpLO25IeXNr_h3Op0wUck"
+}
