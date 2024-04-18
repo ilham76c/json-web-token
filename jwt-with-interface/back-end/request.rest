@@ -1,0 +1,32 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJpbGhhbSIsImVtYWlsIjoiaWxoYW1AbWFpbC5jb20iLCJpYXQiOjE3MTM0NjE5MTYsImV4cCI6MTcxMzQ2MTkzMX0.OyUC9SIXL1r-g3dplWZ6EjlPTEB_YilL1VOLE3ky_kA
+
+
+### Register
+POST http://localhost:5000/register
+Content-Type: application/json
+
+{
+  "name": "ilham",
+  "email": "ilham@mail.com",
+  "password": "12345678",
+  "confirmPassword": "12345678"
+}
+
+
+### Login
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+  "email": "ilham@mail.com",
+  "password": "12345678"
+}
+
+
+### Token
+GET http://localhost:5000/token
+
+
+### Logout
+DELETE http://localhost:5000/logout
